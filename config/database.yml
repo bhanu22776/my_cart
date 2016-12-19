@@ -17,5 +17,9 @@ test:
   database: my_store_test
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: my_store_production
+  pool: 5
+  username: root
+  password:
